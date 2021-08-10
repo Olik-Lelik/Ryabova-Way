@@ -1,0 +1,80 @@
+.rates {
+margin-bottom: 140px;
+}
+
+.rates__wrapper {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr 306px;
+  column-gap: 90px;
+}
+
+.rates__info {
+  order: 1
+}
+
+.rates__title {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    background-color: $light-red;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.rates__text {
+  margin: 0;
+  margin-bottom: 60px;
+  color: rgba($gray-blue, 0.7);
+}
+
+.rates__contact p {
+  margin: 0;
+  margin-bottom: 13px;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.rates__contact .phone__link {
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+  text-decoration: none;
+}
+
+.rates__contact .phone-icon {
+  margin-right: 24.5px;
+  stroke: $light-red;
+}
+
+.rates__list {
+  @include list ();
+
+  display: grid;
+  grid-template-columns: repeat(2, 370px);
+  column-gap: 30px;
+}
+
+.rates__item {
+  padding: 30px;
+  padding-top: 40px;
+  border: 1px solid rgba($gray-blue, 0.3);
+  border-radius: 6px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+  row-gap: 30px;
+}
+
+.rates__item--current {
+  border: 3px solid $light-red;
+}

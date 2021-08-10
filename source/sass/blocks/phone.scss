@@ -1,0 +1,32 @@
+.phone-icon {
+  vertical-align: middle;
+  fill: none;
+}
+
+.phone__link {
+  line-height: 32px;
+  text-decoration: underline;
+
+  &:hover,
+  &:hover > .phone-icon {
+  color: $light-red;
+  stroke: $light-red;
+  }
+
+  &:active > .phone-icon {
+    transform: scale(1.2);
+  }
+
+  &:focus-visible {
+    outline: 3px solid $light-scarlet;
+    outline-offset: 3px;
+    transform: scale(1.2);
+  }
+
+  &:focus-visible  > .phone-icon {
+    stroke: $light-red;
+  }
+}
+
+
+

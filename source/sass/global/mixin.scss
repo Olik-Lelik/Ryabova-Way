@@ -1,0 +1,27 @@
+/*
+
+@mixin fonts-mobile ($fs: 17px, $lh: 24px) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin fonts-tablet ($fs: 43px, $lh: 50px) {
+  font-size: $fs;
+  line-height: $lh;
+}
+
+@mixin fonts-desktop ($fs: 53px, $lh: 57px) {
+  font-size: $fs;
+  line-height: $lh;
+}*/
+
+@mixin link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

@@ -1,0 +1,34 @@
+.email {
+  margin-bottom: 21px;
+}
+
+.email-icon {
+  margin-right: 15px;
+  fill: $hawkes-blue;
+}
+
+.email__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $light-red;
+  text-decoration: underline;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  &:hover > .email-icon {
+    fill: $light-red;
+  }
+
+  &:active > .email-icon {
+    transform: scale(1.2);
+  }
+
+  &:focus-visible {
+    outline: 3px solid $light-scarlet;
+    outline-offset: 3px;
+  }
+
+  &:focus-visible > .email-icon {
+    fill: $light-red;
+  }
+}

@@ -1,0 +1,30 @@
+.footer__wrapper {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.footer__wrapper section {
+  margin-bottom: 80px;
+
+  &:not(:last-child){
+    border-right: 1px solid $hawkes-blue;
+  }
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: $gray-of-black;
+}
+
+.footer__travel {
+  margin-right: 65px;
+}
+
+.footer__contacts {
+  margin-right: 55px;
+}

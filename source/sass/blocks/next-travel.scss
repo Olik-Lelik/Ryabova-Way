@@ -1,0 +1,31 @@
+.next-travel__wrapper {
+  padding-right: 50px;
+}
+
+.next-travel__list {
+  @include list ();
+
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-auto-flow: column;
+  column-gap: 50px;
+  row-gap: 10px;
+}
+
+.next-travel__item {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba($gray-of-black, 0.5);
+}
+
+.next-travel__item--1 {
+  grid-column: 1;
+}
+
+.next-travel__item--2 {
+  grid-column: 2;
+}
+
+.next-travel__item--3 {
+  grid-column: 3;
+}

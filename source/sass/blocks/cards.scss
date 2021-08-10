@@ -1,0 +1,13 @@
+.cards-list {
+  @include list ();
+}
+
+.cards-list__item {
+  display: none;
+}
+
+.cards-list__item--active {
+  display: grid;
+  grid-template-columns: 370px 1fr;
+  grid-column-gap: 100px;
+}

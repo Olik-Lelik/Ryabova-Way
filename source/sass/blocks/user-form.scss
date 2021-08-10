@@ -1,0 +1,101 @@
+.user-form {
+margin-bottom: 160px;
+}
+
+.user-form__wrapper {
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.user-form__img {
+  max-width: 844px;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+.user-form__form-inner {
+  width: 656px;
+  background-color: $white;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  box-sizing: border-box;
+  align-self: center;
+  justify-self: end;
+  padding: 50px;
+  box-shadow: 0px 4px 30px rgba($gray-blue, 0.1);
+  border-radius: 5px;
+}
+
+.user-form__title {
+  margin: 0;
+  margin-bottom: 11px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.user-form__text {
+  margin: 0;
+  margin-bottom: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.user-form__list {
+  @include list ();
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 19px;
+}
+
+.user-form__form {
+  display: grid;
+  row-gap: 25px;
+}
+
+.user-form__lable {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon-star.svg");
+    width: 6px;
+    height: 7px;
+    top: 0;
+    left: 15px;
+  }
+}
+
+.user-form__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  border: 1px solid rgba($gray-blue, 0.3);
+
+  &:hover {
+    box-shadow: 0px 4px 10px rgba($gray-blue, 0.1);
+  }
+
+  &:active,
+  &:focus:focus-visible {
+    border-color: rgba($light-red, 0.3);
+    box-shadow: 0px 4px 10px rgba($gray-blue, 0.1);
+    outline: none;
+  }
+}
+
+.user-form__lable .user-form__input {
+  padding-left: 26px;
+}
+
+.user-form__button {
+  justify-self: center;
+  padding: 18px 40px;
+}

@@ -1,0 +1,51 @@
+.card__info {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.card__title {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 175px;
+    height: 3px;
+    background-color: $light-red;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.card__text {
+  margin: 0;
+  margin-bottom: 50px;
+  letter-spacing: -0.47px;
+  color: rgba($gray-blue, 0.7);
+}
+
+.card__link {
+  display: inline-block;
+  min-width: 250px;
+}
+
+.card__img {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  max-width: 430px;
+  background-color: $gray-blue;
+}
+
+.card__reviews {
+  grid-column: 2 / -1;
+  grid-row: 1 / -1;
+  justify-self: end;
+  align-self: center;
+}
+
+.card__img img {
+  height: 100%;
+  object-fit: cover;
+}
