@@ -1,5 +1,9 @@
 .email {
   margin-bottom: 21px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 28px;
+  }
 }
 
 .email-icon {
@@ -12,6 +16,7 @@
   line-height: 17px;
   color: $light-red;
   text-decoration: underline;
+  word-break: break-all;
   display: grid;
   grid-template-columns: min-content 1fr;
 

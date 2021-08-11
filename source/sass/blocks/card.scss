@@ -1,12 +1,24 @@
 .card__info {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  display: grid;
+
+  @media (max-width: 1023px) {
+    padding: 0 21px;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    display: grid;
+    row-gap: 20px;
+    align-content: flex-start;
+    text-align: center;
+  }
 }
 
 .card__title {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  margin-top: -14px;
+  padding-bottom: 51px;
   position: relative;
+  align-self: flex-end;
 
   &::after {
     content: "";
@@ -15,20 +27,44 @@
     height: 3px;
     background-color: $light-red;
     left: 0;
-    bottom: 0;
+    bottom: 34px;
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0;
+    margin: 0;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
 .card__text {
   margin: 0;
-  margin-bottom: 50px;
   letter-spacing: -0.47px;
   color: rgba($gray-blue, 0.7);
+  align-self: flex-start;
+
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
 }
 
 .card__link {
   display: inline-block;
   min-width: 250px;
+  align-self: center;
+  justify-self: self-start;
+
+  @media (max-width: 768px) {
+    justify-self: center;
+  }
+
+  @media (max-width: 680px) {
+    min-width: auto;
+    justify-self: auto;
+  }
 }
 
 .card__img {
@@ -36,6 +72,12 @@
   grid-row: 1 / -1;
   max-width: 430px;
   background-color: $gray-blue;
+
+  @media (max-width: 1023px) {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    max-width: 100%;
+  }
 }
 
 .card__reviews {
@@ -43,9 +85,26 @@
   grid-row: 1 / -1;
   justify-self: end;
   align-self: center;
+
+  @media (max-width: 1023px) {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    align-self: flex-end;
+    justify-self: center;
+    margin-bottom: -32px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: -67px;
+  }
 }
 
 .card__img img {
   height: 100%;
+  width: auto;
   object-fit: cover;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
 }

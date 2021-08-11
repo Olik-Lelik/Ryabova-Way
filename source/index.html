@@ -12,14 +12,14 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <div class="page__container page-header__wrapper">
+    <div class="page-container page-header__wrapper">
       <a class="page-header__logo">
         <svg width="58" height="22">
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </a>
       <button class="page-header__toggle" type="button">
-        <span class="visually-hidden">Отк  рыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="page-header__nav main-nav">
         <ul class="main-nav__list">
@@ -34,7 +34,7 @@
               <svg class="phone-icon" aria-hidden="true" focusable="false" width="30" height="30" stroke="#141514" stroke-width="2" stroke-miterlimit="10">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>
-              +7 (499)-784-684-46
+              +7 (499) -784-684-46
             </a>
           </div>
         </ul>
@@ -44,29 +44,33 @@
   <main class="page-main">
     <h1 class="visually-hidden">Обзор стран для путешествий по Европе</h1>
     <section class="promo">
-      <div class="page__container promo__wrapper">
+      <div class="page-container promo__wrapper">
         <div class="promo__item">
-          <h2 class="promo__title title">Путешествие по Европе</h2>
-          <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
-          </p>
-          <a href="#" class="promo__link button">
-            Смотреть туры
-            <svg class="promo__icon" aria-hidden="true" focusable="false" fill="none" width="16" height="16">
-              <use xlink:href="img/sprite.svg#arrow-down"></use>
-            </svg>
-          </a>
+          <div class="promo__title-inner">
+            <h2 class="promo__title title">Путешествие по Европе</h2>
+          </div>
+          <div class="promo__text-inner">
+            <p class="promo__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.
+            </p>
+            <a href="#" class="promo__link button" aria-label="Список мест для посещения">
+              Смотреть тур
+              <svg class="promo__icon" aria-hidden="true" focusable="false" fill="none" width="16" height="16">
+                <use xlink:href="img/sprite.svg#arrow-down"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
     <section class="species" id="species">
-      <div class="page__container species__wrapper">
+      <div class="page-container species__wrapper">
         <h2 class="species__title title">Места посещения</h2>
         <p class="species__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
         <ul class="species__list">
           <li class="species__item">
             <a href="#tabs" class="species__item-link">
               <span class="species__country">Греция</span>
-              <span class="species__country species__countri--hover ">Посмотреть подробнее</span>
+              <span class="species__country species__country--hover ">Посмотреть подробнее</span>
               <div class="species__img">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/greece-tablet.webp 1x, img/greece-tablet@2x.webp 2x">
@@ -81,7 +85,7 @@
           <li class="species__item">
             <a href="#tabs" class="species__item-link">
               <span class="species__country">Албания</span>
-              <span class="species__country species__countri--hover">Посмотреть подробнее</span>
+              <span class="species__country species__country--hover">Посмотреть подробнее</span>
               <div class="species__img">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/albania-tablet.webp 1x, img/albania-tablet@2x.webp 2x">
@@ -96,7 +100,7 @@
           <li class="species__item">
             <a href="#tabs" class="species__item-link">
               <span class="species__country">Македония</span>
-              <span class="species__country species__countri--hover">Посмотреть подробнее</span>
+              <span class="species__country species__country--hover">Посмотреть подробнее</span>
               <div class="species__img">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/macedonia-tablet.webp 1x, img/macedonia-tablet@2x.webp 2x">
@@ -111,7 +115,7 @@
           <li class="species__item">
             <a href="#tabs" class="species__item-link">
               <span class="species__country">Черногория</span>
-              <span class="species__country species__countri--hover">Посмотреть подробнее</span>
+              <span class="species__country species__country--hover">Посмотреть подробнее</span>
               <div class="species__img">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/montenegro-tablet.webp 1x, img/montenegro-tablet@2x.webp 2x">
@@ -126,7 +130,7 @@
           <li class="species__item">
             <a href="#tabs" class="species__item-link">
               <span class="species__country">Хорватия</span>
-              <span class="species__country species__countri--hover">Посмотреть подробнее</span>
+              <span class="species__country species__country--hover">Посмотреть подробнее</span>
               <div class="species__img">
                 <picture>
                   <source type="image/webp" media="(max-width: 1023px)" srcset="img/croatia-tablet.webp 1x, img/croatia-tablet@2x.webp 2x">
@@ -142,22 +146,22 @@
       </div>
     </section>
     <section class="tabs" id="tabs">
-      <div class="page__container tabs__wrapper">
+      <div class="page-container tabs__wrapper">
         <ul class="tabs__list">
           <li class="tabs__item">
-            <a href="#grecee" class="tabs__link tabs__link--active">Греция</a>
+            <a href="#grecee" class="tabs__link tabs__link--active" aria-label="Дополнительная информация про Грецию">Греция</a>
           </li>
           <li class="tabs__item">
-            <a href="#albania" class="tabs__link">Албания</a>
+            <a href="#albania" class="tabs__link" aria-label="Дополнительная информация про Албанию">Албания</a>
           </li>
           <li class="tabs__item">
-            <a href="#macedonia" class="tabs__link">Македония</a>
+            <a href="#macedonia" class="tabs__link" aria-label="Дополнительная информация про Македонию">Македония</a>
           </li>
           <li class="tabs__item">
-            <a href="#montenegro" class="tabs__link">Черногория</a>
+            <a href="#montenegro" class="tabs__link" aria-label="Дополнительная информация про Черногорию">Черногория</a>
           </li>
           <li class="tabs__item">
-            <a href="#croatia" class="tabs__link">Хорватия</a>
+            <a href="#croatia" class="tabs__link" aria-label="Дополнительная информация про Хорватию">Хорватия</a>
           </li>
         </ul>
         <ul class="tabs__cards cards-list">
@@ -313,18 +317,18 @@
     </section>
     <section class="rates" id="rates">
       <h2 class="visually-hidden">Тарифы</h2>
-      <div class="page__container rates__wrapper">
+      <div class="page-container rates__wrapper">
         <div class="rates__info">
           <h3 class="rates__title title">Цены</h3>
           <p class="rates__text">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
           <div class="rates__contact">
             <p>Свяжитесь с нами</p>
             <div class="phone">
-              <a href="tel:+749978468446" class="phone__link">
+              <a href="tel:+749978468446" class="phone__link" aria-label="Ссылка на номер телефона">
                 <svg class="phone-icon" aria-hidden="true" focusable="false" width="30" height="30" stroke="#141514" stroke-width="2" stroke-miterlimit="10">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
-                +7 (499)-784-684-46
+                +7 (499) -784-684-46
               </a>
             </div>
           </div>
@@ -358,7 +362,7 @@
                 </svg>
                   Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a href="#" class="rates-card__link button">купить тур сейчас</a>
+            <a href="#" class="rates-card__link button" aria-label="Ссылка для заполнения формы обратно связи">купить тур сейчас</a>
           </li>
           <li class="rates__item rates-card">
             <div class="rates-card__header">
@@ -393,22 +397,13 @@
                 </svg>
                   Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a href="#" class="rates-card__link button">купить тур сейчас</a>
+            <a href="#" class="rates-card__link button" aria-label="Ссылка для заполнения формы обратно связи">купить тур сейчас</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="user-form">
-      <div class="page__container user-form__wrapper">
-        <div class="user-form__img">
-          <picture>
-            <source type="image/webp" media="max-width: 1023px" srcset="img/form-img-tablet.webp 1x, img/form-img-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/form-img-desktop.webp 1x, img/form-img-desktop@2x.webp 2x">
-            <source media="max-width: 1023px" srcset="img/form-img-tablet.jpg 1x, img/form-img-tablet@2x.jpg 2x">
-            <img src="img/form-img-desktop.jpg" srcset="form-img-desktop@2x.jpg 2x"
-            width="844" height="455" alt="Фото заката.">
-          </picture>
-          </div>
+      <div class="page-container user-form__wrapper">
         <div class="user-form__form-inner">
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p class="user-form__title">У Вас остались вопросы?</p>
@@ -428,57 +423,59 @@
                 </label>
               </li>
             </ul>
-            <button class="user-form__button button" type="submit">Отправить</button>
+            <button class="user-form__button button" type="submit" aria-label="Кнопка для отправки формы обратной связи">Отправить</button>
           </form>
           </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="page__container footer__wrapper">
-      <section class="footer__travel next-travel">
-        <div class="next-travel__wrapper">
-          <h2 class="footer__title">Следующие путешествия</h2>
-          <ul class="next-travel__list">
-            <li class="next-travel__item next-travel__item--1">Марсель</li>
-            <li class="next-travel__item next-travel__item--1">Ним</li>
-            <li class="next-travel__item next-travel__item--1">Монпелье</li>
-            <li class="next-travel__item next-travel__item--1">Барселона</li>
-            <li class="next-travel__item next-travel__item--1">Пальма</li>
-            <li class="next-travel__item next-travel__item--2">Сардиния</li>
-            <li class="next-travel__item next-travel__item--2">Палермо</li>
-            <li class="next-travel__item next-travel__item--2">Катания</li>
-            <li class="next-travel__item next-travel__item--2">Неаполь</li>
-            <li class="next-travel__item next-travel__item--2">Рим</li>
-            <li class="next-travel__item next-travel__item--3">Корс</li>
-            <li class="next-travel__item next-travel__item--3">Ницца</li>
-            <li class="next-travel__item next-travel__item--3">Монако</li>
-            <li class="next-travel__item next-travel__item--3">Динь-ле-Бен</li>
-            <li class="next-travel__item next-travel__item--3">Гренобль</li>
-          </ul>
+    <div class="page-container footer__wrapper">
+      <div class="footer__inner">
+        <section class="footer__travel next-travel">
+          <div class="next-travel__wrapper">
+            <h2 class="footer__title">Следующие путешествия</h2>
+            <ul class="next-travel__list">
+              <li class="next-travel__item next-travel__item--1">Марсель</li>
+              <li class="next-travel__item next-travel__item--1">Ним</li>
+              <li class="next-travel__item next-travel__item--1">Монпелье</li>
+              <li class="next-travel__item next-travel__item--1">Барселона</li>
+              <li class="next-travel__item next-travel__item--1">Пальма</li>
+              <li class="next-travel__item next-travel__item--2">Сардиния</li>
+              <li class="next-travel__item next-travel__item--2">Палермо</li>
+              <li class="next-travel__item next-travel__item--2">Катания</li>
+              <li class="next-travel__item next-travel__item--2">Неаполь</li>
+              <li class="next-travel__item next-travel__item--2">Рим</li>
+              <li class="next-travel__item next-travel__item--3">Корс</li>
+              <li class="next-travel__item next-travel__item--3">Ницца</li>
+              <li class="next-travel__item next-travel__item--3">Монако</li>
+              <li class="next-travel__item next-travel__item--3">Динь-ле-Бен</li>
+              <li class="next-travel__item next-travel__item--3">Гренобль</li>
+            </ul>
+            </div>
+        </section>
+        <section class="footer__contacts contacts">
+          <div class="contacts__wrapper">
+            <h2 class="footer__title">Наши контакты</h2>
+              <div class="email">
+                <a href="tel:+749978468446" class="email__link">
+                  <svg class="email-icon" aria-hidden="true" focusable="false" width="26" height="20">
+                    <use xlink:href="img/sprite.svg#icon-email"></use>
+                  </svg>
+                  puteshestviemechta@gmail.ru
+                </a>
+              </div>
+              <div class="phone">
+               <a href="tel:+749978468446" class="phone__link">
+                  <svg class="phone-icon" aria-hidden="true" focusable="false" width="30" height="30" stroke="#141514" stroke-width="2" stroke-miterlimit="10">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                  +7 (499) -784-684-46
+                </a>
+              </div>
           </div>
-      </section>
-      <section class="footer__contacts contacts">
-        <div class="contacts__wrapper">
-          <h2 class="footer__title">Наши контакты</h2>
-            <div class="email">
-              <a href="tel:+749978468446" class="email__link">
-                <svg class="email-icon" aria-hidden="true" focusable="false" width="26" height="20">
-                  <use xlink:href="img/sprite.svg#icon-email"></use>
-                </svg>
-                puteshestviemechta@gmail.ru
-              </a>
-            </div>
-            <div class="phone">
-             <a href="tel:+749978468446" class="phone__link">
-                <svg class="phone-icon" aria-hidden="true" focusable="false" width="30" height="30" stroke="#141514" stroke-width="2" stroke-miterlimit="10">
-                  <use xlink:href="img/sprite.svg#icon-phone"></use>
-                </svg>
-                +7 (499)-784-684-46
-              </a>
-            </div>
+        </section>
         </div>
-      </section>
       <section class="footer__corporate corporate-travel">
         <h2 class="footer__title">Корпоративные путешествия</h2>
         <p class="corporate-travel__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>

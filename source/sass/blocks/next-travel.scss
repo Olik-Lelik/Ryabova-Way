@@ -1,5 +1,9 @@
 .next-travel__wrapper {
-  padding-right: 50px;
+  padding-right: 36px;
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
 }
 
 .next-travel__list {
@@ -10,6 +14,13 @@
   grid-auto-flow: column;
   column-gap: 50px;
   row-gap: 10px;
+
+  @media (max-width: 767px) {
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 12px;
+  }
 }
 
 .next-travel__item {
@@ -20,12 +31,24 @@
 
 .next-travel__item--1 {
   grid-column: 1;
+
+  @media (max-width: 767px) {
+    grid-column: 1 / 2;
+  }
 }
 
 .next-travel__item--2 {
   grid-column: 2;
+
+  @media (max-width: 767px) {
+    grid-column: 2 / -1;
+  }
 }
 
 .next-travel__item--3 {
   grid-column: 3;
+
+  @media (max-width: 767px) {
+    grid-column: 1 / -1;
+  }
 }

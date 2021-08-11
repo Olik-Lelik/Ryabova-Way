@@ -53,6 +53,9 @@
 
 .main-nav__link {
   @include link ();
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
 
   &:hover {
     color: $light-red;
@@ -78,6 +81,7 @@
 
 .main-nav .phone__link {
   color: $gray-of-black;
+  font-size: 18px;
 }
 
 .main-nav .phone-icon {

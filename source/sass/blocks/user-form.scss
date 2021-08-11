@@ -1,18 +1,56 @@
 .user-form {
 margin-bottom: 160px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .user-form__wrapper {
-  padding: 0 15px;
+  min-height: 455px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  background-image: url("../img/form-img-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 15px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/form-img-desktop@2x.jpg");
+  }
+
+  @media (max-width: 1023px) {
+    padding: 0;
+    background-color: $snow;
+    background-image: url("../img/form-img-tablet.jpg");
+    background-size: cover;
+    background-position-x: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/form-img-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: 680px) {
+    background-image: none;
+    min-height: auto;
+    padding: 50px 16px;
+  }
 }
 
 .user-form__img {
   max-width: 844px;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
+
+  @media (max-width: 1023px) {
+    max-width: 100%;
+  }
 }
 
 .user-form__form-inner {
@@ -26,6 +64,17 @@ margin-bottom: 160px;
   padding: 50px;
   box-shadow: 0px 4px 30px rgba($gray-blue, 0.1);
   border-radius: 5px;
+
+  @media (max-width: 1023px) {
+    justify-self: center;
+  }
+
+  @media (max-width: 680px) {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
 }
 
 .user-form__title {
@@ -35,6 +84,10 @@ margin-bottom: 160px;
   font-size: 25px;
   line-height: 32px;
   font-weight: 600;
+
+  @media (max-width: 767px) {
+    margin-bottom: 19px;
+  }
 }
 
 .user-form__text {
@@ -42,6 +95,10 @@ margin-bottom: 160px;
   margin-bottom: 24px;
   text-align: center;
   line-height: 24px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
 }
 
 .user-form__list {
@@ -50,11 +107,20 @@ margin-bottom: 160px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 19px;
+
+  @media (max-width: 680px) {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
 }
 
 .user-form__form {
   display: grid;
   row-gap: 25px;
+
+  @media (max-width: 680px) {
+    row-gap: 20px;
+  }
 }
 
 .user-form__lable {
@@ -78,6 +144,7 @@ margin-bottom: 160px;
   font-size: 14px;
   line-height: 17px;
   border: 1px solid rgba($gray-blue, 0.3);
+  letter-spacing: 0.8;
 
   &:hover {
     box-shadow: 0px 4px 10px rgba($gray-blue, 0.1);
@@ -98,4 +165,19 @@ margin-bottom: 160px;
 .user-form__button {
   justify-self: center;
   padding: 18px 40px;
+
+  @media (max-width: 1023px) {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    min-width: 250px;
+  }
+
+  @media (max-width: 767px) {
+    min-width: 320px;
+  }
+
+  @media (max-width: 680px) {
+    min-width: auto;
+    justify-self: auto;
+  }
 }
