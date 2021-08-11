@@ -133,7 +133,6 @@
 
   &:focus-visible,
   &:hover {
-
     &::before {
       content: "";
       position: absolute;
@@ -197,4 +196,3 @@
 .species__item-link:active .species__countri--hover {
   transform: scale(0.8);
 }
-

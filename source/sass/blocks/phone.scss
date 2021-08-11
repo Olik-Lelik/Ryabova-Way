@@ -10,8 +10,8 @@
 
   &:hover,
   &:hover > .phone-icon {
-  color: $light-red;
-  stroke: $light-red;
+    color: $light-red;
+    stroke: $light-red;
   }
 
   &:active > .phone-icon {
@@ -24,10 +24,7 @@
     transform: scale(1.2);
   }
 
-  &:focus-visible  > .phone-icon {
+  &:focus-visible > .phone-icon {
     stroke: $light-red;
   }
 }
-
-
-
