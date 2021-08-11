@@ -172,7 +172,7 @@
   }
 }
 
-.species__countri--hover {
+.species__country--hover {
   display: none;
   font-size: 14px;
   line-height: 17px;
@@ -188,11 +188,11 @@
   transition: 0.3s linear;
 }
 
-.species__item-link:hover .species__countri--hover,
-.species__item-link:focus-visible .species__countri--hover {
+.species__item-link:hover .species__country--hover,
+.species__item-link:focus-visible .species__country--hover {
   display: block;
 }
 
-.species__item-link:active .species__countri--hover {
+.species__item-link:active .species__country--hover {
   transform: scale(0.8);
 }
